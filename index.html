@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src &apos;self&apos; data: gap: https://ssl.gstatic.com https://fonts.googleapis.com/icon* https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js 'sha256-WS17NXgKdGJCBp+4+Rg1buw/ZZ2gs3f1U6lOwLvKvmM=' 'sha256-tkJydKrWBpGiiW0XQKgEKviapv3waKafG2+Bffcb5rA=' &apos;unsafe-eval&apos;; style-src 'sha256-oHuiDtiIyMZ4fv481TksWV3DfQPDMz3QJmu31fFm8O4=' *; media-src *; font-src *; img-src &apos;self&apos; data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <title>List View</title>
+
+    <!-- CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="js/jquery-1.5.0.mobile.min.css">
+    <style>
+        .ui-header .ui-title {
+            overflow: visible !important;
+        }
+
+        #cjp-accordion1 .app {
+            left: 5px !important;
+            margin: 5px !important;
+            position: relative !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div data-role="page" id="homePage">
+        <header>
+            <h1 class="ui-title">La lista</h1>
+            <form class="add-new-element">
+                <input type="text" name="task-name" placeholder="Crunch your goalz">
+                <input type="submit" value="Dale perro">
+            </form>
+        </header>
+        <div data-role="header">
+            <h1>Home</h1>
+        </div>
+        <ul data-role="listview" id="list">
+        </ul>
+
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" id="jqm-trans-disable">
+        $(document).on("mobileinit", function () {
+            $.mobile.defaultPageTransition = "none";
+            $.mobile.defaultDialogTransition = "none";
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
