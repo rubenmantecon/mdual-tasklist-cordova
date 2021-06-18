@@ -13,5 +13,11 @@ If you get an npm error, it s most likely the `package.lock`. Delete it and try 
 cordova run browser
 ```
 
-You could also emulate this an Android app, via `cordova platform add android`, `cordova build android and `cordova run android`. Note that this requires setting up an Android SDK.
+You could also emulate this an Android app, via 
+```
+cordova platform add android
+cordova build android
+cordova run android
+```
+Note that this requires setting up an Android SDK.
 
